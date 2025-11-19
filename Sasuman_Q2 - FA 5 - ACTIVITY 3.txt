@@ -1,0 +1,12 @@
+destinations = []
+print("Enter 5 travel destinations:")
+for i in range(5):
+    place = input(f"{i+1}:")
+    destinations.append(place)
+new_second = input("\nUpdate your 2nd destination:")
+destinations[1] = new_second
+new_fifth = input("Update your 5th destination:")
+destinations[4] = new_fifth
+print("\nYour UPDATED travel destinations:")
+for i in range(5):
+    print (f"{i+1}: {destinations[i]}") 
